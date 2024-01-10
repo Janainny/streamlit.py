@@ -83,14 +83,3 @@ st.header('Radiação solar')
 st.line_chart(data=leituras, x='Datetime', y='SolarRad', color='#FFFF00')
 st.write(f'Radiação mínima: {leituras.SolarRad.min()}W/m²')
 st.write(f'Radiação máxima: {leituras.SolarRad.max()}W/m²')
-
-st.header('Dicionário de dados')
-st.write('Datetime: Tempo preciso em que a leitura ocorreu em formato americano;','id: Identificador único da leitura;','Data_add: Data em que a leitura ocorreu em formato americano;',
-         'BarTrend: Tendência da pressão para 3h;', 'Barometer: Pressão barométrica;', 'TempOut: Temperatura do ar em grau em (⁰C);',
-         'WindSpeed: Velocidade do vento em (km/h);',  'WindSpeed10Min: Média de velocidade do vento nos últimos 10 minutos em (km/h);',
-         'WindDir: Direção do vento em (⁰);','HumOut: Umidade relativa do ar em (%);', 'RainRate: Volume de chuva por hora (mm);',
-         'SolarRad: Radiação solar em (W/m²);', 'RainDay: Volume de chuva acumulado no dia em (mm);', 'RainMonth: Volume de chuva acumulado no Mês em (mm);',
-        'RainYear: Volume de chuva acumulado no ano em (mm);', 'ETDay: Volume de evapotranspiração acumulado no dia em (mm);'
-        'ETMonth: Volume de evapotranspiração acumulado no mês em (mm);', 'ETYear: Volume de evapotranspiração acumulado no ano em (mm);',
-        'RainStorm: Volume de chuva considerada tempestade (mm);' ,'HeatIndex: Índice de calor em (⁰C);', 'WindChill: Sensação térmica considerando vento (⁰C);',
-        'THSWIndex: Sensação térmica considerando umidade, radiação solar, vento e temperatura;', 'Station: Identificador da estação meteorológica')
